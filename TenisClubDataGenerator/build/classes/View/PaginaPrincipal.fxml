@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vbox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="vbox" stylesheets="@../resources/paginaprincipal.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PaginaPrincipalController">
+   <children>
+      <MenuBar nodeOrientation="RIGHT_TO_LEFT">
+         <menus>
+            <Menu fx:id="usuarioMenu" mnemonicParsing="false" text="Usuario">
+               <items>
+                  <RadioMenuItem fx:id="datos" mnemonicParsing="false" onAction="#infDatos" text="Datos">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="USER" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem fx:id="misreservas" mnemonicParsing="false" onAction="#misReservas" text="Mis reservas" toggleGroup="$USER" />
+                  <RadioMenuItem fx:id="cerrSes" mnemonicParsing="false" onAction="#cerrarSesion" text="Cerrar Sesión" />
+               </items>
+               <graphic>
+                  <ImageView fx:id="imagenPerfil" fitHeight="46.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="322.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>

@@ -1,0 +1,9 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.vbox
+{
+    -fx-background-image: url("/resources/fotos/fondoweb.png");
+    -fx-background-size:cover;
+}

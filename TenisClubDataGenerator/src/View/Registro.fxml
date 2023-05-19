@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="vBox" prefHeight="618.0" prefWidth="649.0" styleClass="vbox" stylesheets="@../resources/registro.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegistroController">
+   <children>
+      <GridPane alignment="CENTER" prefWidth="562.0" VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.79998779296875" minWidth="10.0" prefWidth="235.20001220703125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.79998779296875" minWidth="10.0" prefWidth="364.79998779296875" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox accessibleRole="TEXT_FIELD" prefHeight="74.0" prefWidth="383.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Text fx:id="textoErrorNombre" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </VBox>
+            <VBox accessibleRole="TEXT_FIELD" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Text fx:id="textoErrorApellido" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </VBox>
+            <VBox accessibleRole="TEXT_FIELD" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Text fx:id="textoErrorNickname" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </VBox>
+            <VBox accessibleRole="PASSWORD_FIELD" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Text fx:id="textoErrorContraseña" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <Text fx:id="textoErrorTelf" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <Text fx:id="textoErrorTarjeta" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <children>
+                  <Text fx:id="textoErrorSVC" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </VBox>
+            <Label text="NOMBRE" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label text="APELLIDOS" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label text="NICKNAME" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label text="CONTRASEÑA" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label text="TELEFONO" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label text="TARJETA DE CRÉDITO" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="SVC" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label text="IMAGEN" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nombre" accessibleRole="PARENT" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="apellido" accessibleRole="PARENT" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="nickName" accessibleRole="PARENT" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <PasswordField fx:id="contraseña" accessibleRole="PARENT" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </PasswordField>
+            <TextField fx:id="numero" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="tarjetaCred" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="svc" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="botonImage" mnemonicParsing="false" onAction="#subirArchivos" text="SUBIR IMAGEN" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Button>
+            <TextField fx:id="linkImagen" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets right="120.0" />
+               </GridPane.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HOLA, ESTAMOS ENCANTADOS DE CONOCERTE" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <GridPane alignment="CENTER" prefHeight="54.0" prefWidth="650.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="609.8000183105469" minWidth="10.0" prefWidth="504.6000671386719" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.79998779296875" minWidth="10.0" prefWidth="144.59993286132817" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="acepReg" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#acepRegistro" prefHeight="26.0" prefWidth="88.0" text="ACEPTAR" GridPane.halignment="RIGHT" />
+            <Button fx:id="cancReg" mnemonicParsing="false" onAction="#cancelRegistro" prefHeight="26.0" prefWidth="86.0" text="CANCELAR" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

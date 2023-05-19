@@ -1,0 +1,34 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.button 
+{
+    -fx-background-color: #bcff03;
+    -fx-text-fill: black; /*cambia las letras de un boton*/
+    -fx-font-size: 10px;
+    -fx-border: ridge; /*con relieve*/
+    -fx-border-width: 0.5px; /*grosor del borde*/
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px; /*Cambia los marcos de los botones*/
+
+}
+.vbox
+{
+    -fx-background-image: url("/resources/fotos/fondoweb.png");
+    -fx-background-size:cover;
+}
+.gridPane
+{
+    -fx-background-image: url("/resources/fotos/fondoweb.png");
+    -fx-background-size:cover;
+}
+.textError
+{
+    -fx-fill:red;
+}
+.text
+{
+    -fx-fill:black;
+}

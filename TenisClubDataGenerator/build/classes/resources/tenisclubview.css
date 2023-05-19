@@ -1,0 +1,120 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/* Estilos para la página de inicio */
+.vbox /*FUNCIONA*/
+{ 
+    -fx-background-image: url("/resources/fotos/fondoweb.png");
+    -fx-background-size:cover;
+}
+
+.button {
+    -fx-background-color: #bcff03;
+    -fx-text-fill: black; /*cambia las letras de un boton*/
+    -fx-font-size: 15px;
+    -fx-padding: 10px;
+    -fx-border: ridge; /*con relieve*/
+    -fx-border-width: 20px; /*grosor del borde*/
+    -fx-background-radius: 20px; /*Cambia los marcos de los botones*/
+    
+}
+
+
+.tituloPagina
+{
+    -fx-fill: #bcff03; /*cambia el color a los objetos Text*/
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),5,0,0,0);
+}
+.mensajeInicial
+{
+    -fx-fill: #bcff03; /*cambia el color a los objetos Text*/
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),5,0,0,0);   
+}
+
+
+/* Estilos para la página de reservas */
+#reservas {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+#reservas h2 {
+    font-size: 30px;
+    color: #3C3C3C;
+    margin-bottom: 20px;
+}
+
+#reservas table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#reservas table th {
+    font-size: 18px;
+    color: #666666;
+    text-align: left;
+    padding: 10px;
+    
+}
+
+#reservas table td {
+    font-size: 16px;
+    color: #666666;
+    padding: 10px;
+    
+}
+
+#reservas form {
+    margin-bottom: 40px;
+}
+
+#reservas label {
+    font-size: 18px;
+    color: #666666;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#reservas input[type="text"],
+#reservas input[type="email"],
+#reservas select {
+    font-size: 16px;
+    color: #666666;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#reservas input[type="submit"] {
+    background-color: #FF9933;
+    color: #FFFFFF;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilos para el menú */
+#menu {
+    background-color: #333333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu a {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
